@@ -1,0 +1,159 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-6 text-center">
+        <h1>FORM</h1>
+      </div>
+
+      <div class="col-sm-6 text-center">
+        <h1>TABLE</h1>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name"><br>
+
+
+            
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="Phone Number">Phone Number:</label>
+            <input type="Phone number" class="form-control" id="Phone number" placeholder="Enter your Phone Number">
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="date">Date</label>
+            <input class="form-control "  id="date" name="date" placeholder="DD/MM/YYY" type="date"/>
+          </div>
+
+          <div class="form-group">
+            <label for="Adress">Adress:</label>
+            <input type="Adress" class="form-control" id="Adress" placeholder="Enter your Adress">
+          </div>
+
+          
+
+          <div class="form-group">
+            <label for="Gender" > Gender: </label><br>
+            <input class="form-check-input " type="radio" name="gender" id="male" value="male" style="margin-left: 25px;">
+            <label class="form-check-label" for="male" style="margin-left: 50px;">
+              Male
+            </label>
+          </div>
+          
+          <div class="form-group">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female" style="margin-left: 25px;">
+            <label class="form-check-label" for="female" style="margin-left: 50px;">
+              Female
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="city">City:</label>
+            <select class="form-control" id="city" name="city" required>
+              <option value="">Select a city</option>
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="kolkata">Kolkata</option>
+              <option value="chennai">Chennai</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="hobbies">Hobbies:</label><br>
+            <div class="form-check">
+              <input class="form-check-input ml-3" type="checkbox" id="reading" name="hobbies[]" value="reading">
+              <label class="form-check-label ml-5" for="reading">Reading</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input ml-3" type="checkbox" id="music" name="hobbies[]" value="music">
+              <label class="form-check-label ml-5" for="music">Music</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input ml-3" type="checkbox" id="travelling" name="hobbies[]" value="travelling">
+              <label class="form-check-label ml-5" for="travelling">Travelling</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input ml-3" type="checkbox" id="sports" name="hobbies[]" value="sports">
+              <label class="form-check-label ml-5" for="sports">Sports</label>
+            </div>
+          </div>
+          
+          
+
+    
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Reset</button>
+        </form>
+      </div>
+
+      <div class="col-sm-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Name</th>
+              <th>Phone No</th>
+              <th>Gender</th>
+              <th>City</th>
+              <th>Hobbies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Shivam </td>
+              <td>9304182006</td>
+              <td>Male</td>
+              <td>Delhi</td>
+              <td>Reading,Travelling</td>
+            </tr>
+            <tr>
+              <td>2</td>
+				<td>Rani</td>
+				<td>9876543210</td>
+				<td>Female</td>
+				<td>Mumbai</td>
+       <td>Travelling,Music</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Shaqib</td>
+              <td>9801017885</td>
+              <td>Male</td>
+              <td>Kolkata</td>
+              <td>Reading,Sports</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
